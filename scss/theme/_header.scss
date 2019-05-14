@@ -1,0 +1,42 @@
+header[role='mast__head'] {
+  padding: calc(1 / 1 * 1.2%) calc(1 / 1 * 6%);
+  & [top__button] {
+    & a {
+      font-size: calc(0.7vw + 0.4vh + 0.5vmin);
+	  &:not(:last-child){
+		margin-right:calc(1 / 1 * 1%);
+	  }
+    }
+	
+  }
+  @media (max-width: 767px) {
+	padding: calc(1 / 1 * 4.2%) calc(1 / 1 * 1%);
+	  [head__buttons]{
+		& a{flex:1; margin:0 6px;
+			&.white_bg_btn{
+				background:$base-color; color:#fff
+			}
+		}
+	  }
+	}
+	&.head__inrer{
+		box-shadow:0 0 10px rgba(0,0,0,0.1);
+		& .row{
+			justify-content:space-between
+		}
+	}
+	 @media (max-width: 767px) {
+		& [top__button_home]{
+			& .logo{
+				flex:0 0 36%; margin-right:5px;
+			}
+			& [top__button]{
+				flex:1;
+				& a{
+					flex:1; font-size:12px;
+				}
+			}
+		}
+	 }
+}
+

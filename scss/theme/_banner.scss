@@ -1,0 +1,17 @@
+section[role='banner__area'] {
+  height: 50vw;
+  background-size: cover;
+  padding: calc(1 / 1 * 6%) calc(1 / 1 * 6%);
+  & h1 {
+    font-size: calc(3vw + 1.5vh + 0.5vmin);
+    text-transform: uppercase;
+    color: #000;
+    margin: 0 0 20px;
+  }
+  & .primary-btn2{
+  font-size: calc(0.7vw + 0.4vh + 0.5vmin)}
+  @media(max-width:767px){
+	& .primary-btn2{
+	font-size: calc(0.7vw + 1.5vh + 0.5vmin)}
+  }
+}
